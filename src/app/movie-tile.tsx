@@ -3,7 +3,7 @@ export interface MoviePosterProps {
   posterImageUrl: string;
 }
 
-export function MoviePoster(moviePosterProps: MoviePosterProps) {
+export function MovieTile(moviePosterProps: MoviePosterProps) {
   return (
     <div>
       <img src={moviePosterProps.posterImageUrl} alt={moviePosterProps.title} />
