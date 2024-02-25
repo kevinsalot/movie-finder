@@ -1,0 +1,1 @@
+export let ImageHost = "https://image.tmdb.org"; // Replace with config API calls

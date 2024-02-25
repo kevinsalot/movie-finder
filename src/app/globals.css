@@ -16,8 +16,13 @@
   }
 }
 
+@layer base {
+  html {
+    @apply text-green-500;
+  }
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,

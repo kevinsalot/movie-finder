@@ -1,5 +1,5 @@
 import { Movie } from "./data/Movie";
-import { MovieTile } from "./movie-tile";
+import { MovieTile } from "./MovieTile";
 
 export interface MovieResultsProps {
   movies: Array<Movie>;
@@ -7,10 +7,10 @@ export interface MovieResultsProps {
 
 export function MovieResults(movieResultsProps: MovieResultsProps) {
   const items = movieResultsProps.movies.map((movie: Movie) => (
-    <li>
+    <li className="p-2" key={movie.id}>
       <MovieTile title={movie.title} posterImageUrl={movie.posterImageUrl} />
     </li>
   ));
 
-  return <ul>{items}</ul>;
+  return <ul className="flex flex-wrap">{items}</ul>;
 }
