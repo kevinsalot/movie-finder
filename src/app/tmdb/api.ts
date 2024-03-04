@@ -2,9 +2,16 @@ import { Movie } from "../data/Movie";
 import { client } from "./client";
 import { imageToUrl } from "./utils";
 
-export async function discoverMovies(categories?: string[]) {
+export async function discoverMovies(title?: string) {
   let movieResults = new Array<Movie>();
-  const { data, error } = await client.GET("/3/discover/movie");
+
+  console.log(`Search for: ${title}`);
+  const { data, error } = await client.GET("/3/search/movie", {
+    params: {
+      query: {
+        query: title || "",
+      }
+    }});
 
   if (data?.results) {
     movieResults = data.results?.map((item) => {

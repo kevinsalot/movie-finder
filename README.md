@@ -1,7 +1,8 @@
 # Movie DB credential
 
-API KEY: 3e18071042b44cb650657a0ba66bc785
-RO KEY: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzZTE4MDcxMDQyYjQ0Y2I2NTA2NTdhMGJhNjZiYzc4NSIsInN1YiI6IjVhZTcxOGNmOTI1MTQxMGNkNTAwOGNmNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MDtIoQp5ZY8nz9L6oo_7lO3TsoLxZ1G6E_pcVVbX3jc
+Create a `private.ts` in the root of the repository
+
+`export const tmdbAccessToken: string = "<redacted>";`
 
 https://developer.themoviedb.org/docs/getting-started
 
@@ -11,9 +12,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
-npm run dev
-```
+`npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
